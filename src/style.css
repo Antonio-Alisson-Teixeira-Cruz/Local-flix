@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-image: url("./movie-background-collage.jpg");
+    background-size: cover ;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(5px);
+    position: absolute;
+    z-index: -1;
+}
+
+
+.back::before {
+    content: "";
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 720px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B7B1F2;
+}
+
+.container *{
+    background-color: #B7B1F2;
+}
+
+.banner {
+    width: 500px;
+    border-radius: 14px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 180px;
+    justify-content: space-between;
+}
+
+.loginLbl {
+    font-size: 20px;
+    justify-self: left;
+}
+
+.loginInput {
+    height: 28px;
+    border: 1px solid ;
+    border-radius: 20px;
+    background-color: #FDB7EA;
+    transition: 0.3s ease-in-out;
+}
+
+.loginInput:hover{
+    background-color: #ffcef2;
+}
+
+.loginBtn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    width: 100px;
+    align-self: center;
+    border-radius: 24px;
+    border: 1px solid black;
+    background-color: #FFDCCC;
+    transition: 0.3s ease-in-out;
+}
+
+.loginBtn:hover {
+    background-color: #ffe7dc;
+}
+
+.redirect {
+    text-decoration: none;
+    color: rgb(40, 86, 236) 5px 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.redirect:hover {
+    text-shadow: rgb(14, 51, 173) 5px 0 10px;
+}
+
+.redirect:visited {
+    color: rgb(40, 86, 236) 5px 0 10px;
+}
